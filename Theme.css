@@ -23,6 +23,7 @@
   --text-link: #58a6ff;
   --text-normal: #c9d1d9;
   --text-muted: #8b949e;
+  --background-secondary-alt: #01011f;
 }
 
 /**---GRADIENT---**/
@@ -186,4 +187,8 @@
 ::selection {
 	color: black;
 	background: #DDD;
+}
+
+section.panels__58331{
+	box-shadow: 0 0 2em 2em var(--background-secondary-alt);	
 }
