@@ -17,6 +17,9 @@
   --gradient-90: linear-gradient(var(--gradient-direction), rgb(var(--gradient-primary), 0.9), rgb(var(--gradient-secondary), 0.9));
   --background-primary: #00000A;
   --background-secondary: #00000D;
+  --background-tertiary: #000018;
+  --channeltextarea-background: #00001A;
+  --background-message-hover: #05051B;
   --text-link: #58a6ff;
   --text-normal: #c9d1d9;
   --text-muted: #8b949e;
