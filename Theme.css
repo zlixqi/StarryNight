@@ -24,6 +24,7 @@
   --text-normal: #c9d1d9;
   --text-muted: #8b949e;
   --background-secondary-alt: #01011f;
+  --background-modifier-hover: #01011f;
 }
 
 /**---GRADIENT---**/
@@ -191,4 +192,8 @@
 
 section.panels__58331{
 	box-shadow: 0 0 2em 2em var(--background-secondary-alt);	
+}
+
+.peopleListItem_dab480:hover{
+	box-shadow: 0 0 1em 0 var(--background-modifier-hover);	
 }
