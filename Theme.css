@@ -1,4 +1,186 @@
+/**
+    * @name StarryNight
+    * @version 1.0
+    * @description For those lost under the stars
+    * @author zlixqi
+    * @source https://github.com/zlixqi/StarryNight
+    * @website https://github.com/zlixqi
+**/
+
 :root {
-  --main-bg-color:#00000a;
-  --main-text-color:#fff;
+  --gradient-primary: 1, 0, 11;
+  --gradient-secondary: 101, 101, 104;
+  --gradient-direction: 300deg;
+  --gradient: linear-gradient(var(--gradient-direction), rgb(var(--gradient-primary)), rgb(var(--gradient-secondary)));
+  --gradient-20: linear-gradient(var(--gradient-direction), rgb(var(--gradient-primary), 0.2), rgb(var(--gradient-secondary), 0.2));
+  --gradient-50: linear-gradient(var(--gradient-direction), rgb(var(--gradient-primary), 0.5), rgb(var(--gradient-secondary), 0.5));
+  --gradient-90: linear-gradient(var(--gradient-direction), rgb(var(--gradient-primary), 0.9), rgb(var(--gradient-secondary), 0.9));
+  --background-primary: #00000A;
+  --background-secondary: #00000D;
+  --text-link: #58a6ff;
+  --text-normal: #c9d1d9;
+  --text-muted: #8b949e;
+}
+
+/**---GRADIENT---**/
+#app-mount .base_c0676e::before {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), transparent);
+    z-index: 1;
+    top: 48px;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+#app-mount .botTagRegular_c89c9a {
+    background: var(--gradient);
+    color: var(--text-normal);
+    margin-top: 0;
+}
+
+#app-mount .botText_daff56 {
+    font-weight: 600;
+}
+
+#app-mount .botTagInvert-18-95s {
+    color: rgb(var(--gradient-primary));
+}
+
+    #app-mount .botTagInvert-18-95s .botText_daff56 {
+        font-weight: bold;
+    }
+
+::-moz-selection {
+    background: rgb(var(--gradient-primary));
+    color: var(--text-normal);
+}
+
+::selection {
+    background: rgb(var(--gradient-primary));
+    color: var(--text-normal);
+}
+
+#app-mount .tooltipPrimary__51b23 {
+    background: var(--gradient);
+}
+
+#app-mount .popout_a6e77f::before {
+    content: "";
+    background: linear-gradient(var(--tint), var(--tint)), var(--fb-overlay-image);
+    background-position: var(--fb-overlay-position, center);
+    background-size: var(--fb-overlay-size, cover);
+    background-attachment: var(--fb-overlay-attachment, fixed);
+    background-repeat: var(--fb-overlay-repeat, no-repeat);
+    box-shadow: inset 0 0 0 100vmax rgb(0, 0, 0, var(--overlay-brightness, var(--popout-modal-brightness)));
+    height: calc(100% + var(--fb-overlay-blur) * 5);
+    width: calc(100% + var(--fb-overlay-blur) * 5);
+    top: calc(var(--fb-overlay-blur) / -1 * 2.5);
+    left: calc(var(--fb-overlay-blur) / -1 * 2.5);
+    position: absolute;
+    filter: blur(var(--fb-overlay-blur));
+    transform: translate(var(--fb-overlay-blur)/-1, calc(var(--fb-overlay-blur) / -1));
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    z-index: -1;
+}
+
+#app-mount .lookFilled-1Gx00P.colorBrand-3pXr91 {
+    background: var(--gradient);
+}
+
+#app-mount .lookLink-9FtZy-.colorBrand-3pXr91 {
+    color: rgb(var(--gradient-primary));
+    opacity: 1;
+}
+
+#app-mount .item_b7fb7e[style*="rgb(114, 137, 218)"], #app-mount .item_b7fb7e[aria-checked=true] {
+    background: var(--gradient) !important;
+}
+
+#app-mount .item_b7fb7e[style*="rgb(114, 137, 218)"] polyline, #app-mount .item_b7fb7e[aria-checked=true] polyline {
+        stroke: rgb(var(--gradient-primary));
+}
+
+#app-mount .themeDefault-24hCdX.valueChecked-m-4IJZ {
+    background: var(--gradient);
+}
+
+#app-mount .checkboxElement-uwAa9F:checked + span {
+    border-color: rgb(var(--gradient-primary));
+    background: rgb(var(--gradient-primary));
+}
+
+#app-mount .checkbox-3s5GYZ {
+    color: rgb(var(--gradient-primary));
+}
+
+#app-mount .checkbox-1ix_J3 {
+    background: var(--foreground);
+    border: none;
+}
+
+    #app-mount .checkbox-1ix_J3.checked-1pZh2h {
+        background: var(--gradient) !important;
+        border: none !important;
+    }
+
+#app-mount .barFill__1f56b {
+    background: var(--gradient);
+}
+
+#app-mount .guilds__2b93a .tutorialContainer_b06ae6 .childWrapper_a6ce15 {
+    background: var(--gradient);
+    background-color: transparent;
+}
+
+#app-mount .guilds__2b93a [class*=circleIconButton] {
+    background: var(--foreground);
+    color: rgb(var(--gradient-primary));
+}
+
+#app-mount .animatedContainer-1pJv5C {
+    -webkit-mask: linear-gradient(rgba(0, 0, 0, 0.9) 60%, rgba(0, 0, 0, 0) 100%) !important;
+    top: 48px;
+    background: transparent;
+}
+
+#app-mount .containerUserOver__2f65b::after {
+    background: var(--gradient-20);
+    border: 2px solid rgb(var(--gradient-primary));
+}
+
+#app-mount .channel__0aef5 .selected-3veCBZ {
+    background: var(--gradient);
+}
+
+/**---HOME BUTTON---**/
+#app-mount .guilds__2b93a .tutorialContainer_b06ae6 .listItem__48528:first-child .wrapper__8436d::before {
+    content: "";
+    position: absolute;
+    background: var(--home-button-image, url("https://i.imgur.com/RGTnbfe.gif"));
+    background-size: var(--home-button-size, cover);
+    background-position: var(--home-button-position, center);
+    background-repeat: var(--home-button-repeat, no-repeat);
+    height: 100%;
+    width: 100%;
+    transition: 0.2s ease;
+}
+
+/**---UNREAD GLOW---**/
+#app-mount .item_f9d377,
+#app-mount .unread__48cf4{
+    box-shadow: 0 0 .25em 0 #fff;
+}
+
+/**---SELECTION---**/
+::selection {
+	color: black;
+	background: #DDD;
 }
