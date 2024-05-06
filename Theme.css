@@ -194,6 +194,12 @@ section.panels__58331{
 	box-shadow: 0 0 2em 2em var(--background-secondary-alt);	
 }
 
-.peopleListItem_dab480:hover{
+li:hover{
 	box-shadow: 0 0 1em 0 var(--background-modifier-hover);	
+}
+
+section.container__26baa{
+	--__header-bar-background: #01011f;
+	box-shadow: 0 0 2em 0 var(--__header-bar-background) !important;
+	background: var(--__header-bar-background) !important; 
 }
