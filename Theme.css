@@ -190,6 +190,7 @@
 	background: #DDD;
 }
 
+/**---FADE & FRIEND HOVER**/
 section.panels__58331{
 	box-shadow: 0 0 2em 2em var(--background-secondary-alt);	
 }
@@ -202,4 +203,25 @@ section.container__26baa{
 	--__header-bar-background: #01011f;
 	box-shadow: 0 0 2em 0 var(--__header-bar-background) !important;
 	background: var(--__header-bar-background) !important; 
+}
+
+/**---STAR STATUS**/
+#app-mount .pointerEvents__585e6{
+	mask: url("https://i.imgur.com/Q4c5KB9.png");
+	mask-repeat: no-repeat;
+	mask-size: cover;
+	mask-origin: border-box;
+  mask-clip: border-box;
+  mask-composite: add;
+  mask-mode: match-source;
+}
+
+#app-mount .status__1c26d{
+	mask: url("https://i.imgur.com/Q4c5KB9.png");
+	mask-repeat: no-repeat;
+	mask-size: cover;
+	mask-origin: border-box;
+  mask-clip: border-box;
+  mask-composite: add;
+  mask-mode: match-source;
 }
